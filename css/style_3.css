@@ -1,0 +1,467 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, sans-serif;
+}
+li{
+    list-style: none;
+}
+/*----------- CƯỜNG-Header --------------*/
+header{
+    position: sticky;
+    top: 0;left: 0;right: 0;
+    z-index: 100;
+    background: rgba(255, 247, 236, 0.3);
+    transition: all 0.3s ease;
+}
+header:hover{
+    background: rgb(255, 223, 135);
+}
+header.sticky{
+    background: rgb(255, 223, 135);
+}
+.header-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+.menu{
+    display: flex;
+}
+.menu li{
+    padding: 0 12px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+.menu a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.menu a:hover{
+    color: rgb(0, 140, 255);
+    border-bottom: 2px solid rgb(255, 102, 0);
+    padding-bottom: 10px;
+}
+.submenu{
+    position: absolute;
+    background: rgb(255, 223, 135);
+    width: 200px;
+    padding: 10px ;
+    display: none;
+    top: 50px;
+    transition: all 0.5s ease;
+    margin-top: 8px;
+}
+.submenu li{
+    padding: 7px 0;
+}
+.menu li:hover .submenu{
+    display: block;
+    top: 30px;
+}
+.other{
+    display: flex;
+}
+.other li{
+    margin-left: 15px;
+}
+.other li:first-child{
+    position: relative;
+}
+.other li:first-child input{
+    width: 100%;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid black;
+    padding-left: 3px;
+    background: transparent;
+}
+.other li:first-child i{
+    position: absolute;
+    right: 2px;
+}
+.other li:nth-child(2) i{
+    font-size: 20px;
+    color: black;
+    border-left: 2px solid gray;
+    padding-left: 15px;
+}
+.other li:nth-child(2) i:hover{
+    color: red;
+}
+.other li:last-child i{
+    font-size: 20px;
+    color: black;
+    border-left: 2px solid gray;
+    padding-left: 15px;
+}
+.other li:last-child i:hover{
+    color: blue;
+}
+/*----------- Products --------------*/
+.products{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+#chevron{
+    font-size: 10px;
+}
+.wrapper .product-home{
+    background: rgb(255, 223, 135);
+    padding: 5px 0;
+}
+.product-top-content{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+.product-home a{
+    text-decoration: none;
+    font-size: 12px;
+    color: black;
+    padding: 0px 5px;
+}
+.product-home a:hover{
+    color: red;
+}
+.product-content{
+    display: flex;
+}
+.content-left{
+    width: 55%;
+}
+.product-big-img{
+    border: 2px solid gainsboro;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+.product-big-img img{
+    width: 100%;
+}
+.product-small-img{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 3px;
+    cursor: pointer;
+}
+.product-small-img li{
+    flex-basis: 25%;
+}
+.product-small-img img{
+    width: 100%;
+    border: 1px solid gainsboro;
+}
+.content-right{
+    width: 45%;
+    padding-top: 50px;
+    padding-left: 30px;
+}
+.product-price p{
+    color: red;
+    font-size: 30px;
+    font-weight: 700;
+}
+.so-luong{
+    display: flex;
+    margin-bottom: 100px;
+}
+.so-luong input{
+    width: 40px;
+    height: 25px;
+    margin-left: 10px;
+}
+.other p{
+    color: red;
+}
+.product-buttom button{
+    border: none;
+    width: 210px;
+    height: 50px;
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+}
+.product-buttom button:nth-child(1){
+    background: red;
+}
+.product-buttom button:nth-child(1):hover{
+    background: rgb(112, 3, 3);
+}
+.product-buttom button:nth-child(2){
+    background: rgb(49, 161, 45);
+}
+.product-buttom button:nth-child(2):hover{
+    background: rgb(13, 53, 12);
+}
+.wrapper-content{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+.nav-tab{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    border-bottom: 3px solid #ddd;
+    margin-top: 50px;
+}
+.nav-tab li{
+    margin-right: 10px;
+}
+.nav-tab li a{
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+    font-weight: bold;
+    display: block;
+    padding: 6px 10px;
+    position: relative;
+}
+.nav-tab li a::after{
+    content: "";
+    height: 3px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    background: transparent;
+}
+.nav-tab li.active a::after, .nav-tab li:hover a::after{
+    background: #e74c3c;
+}
+.tab-content-item{
+    padding-top: 15px;
+}
+
+/*-----------Hiếu-sản phẩm liên quan----------------*/
+#wrapper{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+.headline{
+    margin: 40px 0px;
+}
+.headline p{
+    color: #111;
+    padding: 5px 15px;
+    border-bottom: 4px solid red;
+    display: inline-block;
+    font-weight: 600;
+}
+#wrapper .products{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+}
+#wrapper .products li{
+    flex-basis: 20%;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+#wrapper .products li img{
+    max-width: 100%;
+    height: auto;
+}
+.product-items .product-top{
+    position: relative;
+    overflow: hidden;
+}
+.product-thumb{
+    display: block;
+}
+.product-items .product-top .buy-now{
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    background: #446084;
+    opacity: 0.85  ;
+    color: #fff;
+    padding: 10px 0px;
+    position: absolute;
+    bottom: -55px;
+    transition: 0.25s ease-in-out;
+    width: 100%;
+}
+#wrapper .products li:hover .buy-now{
+    bottom: 0px;
+    color: white;
+    }
+#wrapper .products li:hover{
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+.product-info{
+    padding: 20px 0px;
+    text-align: center;
+}
+.product-info a{
+    text-decoration: none;
+}
+.product-name {
+    color: #334862;
+    padding: 3px 0px;
+}
+.product-info .product-price{
+    color: rgb(255, 0, 0);
+    padding: 2px 0px;
+    font-weight: 600;
+}
+.star{
+    color:rgb(255, 217, 0);
+}
+/*----------- Dương-Footer --------------*/
+.banner-footer{
+    max-width: 100%;
+    margin: 0;
+    padding-left: 0;
+}
+.banner-footer img{
+    width: 100%;
+}
+#footer a{
+    font-size: 12px;
+    text-decoration: none;
+    color: black;
+}
+#footer{
+    background: rgb(255, 223, 135);
+}
+.footer-top{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1170px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    padding: 0;
+    padding-top: 15px;
+    border-bottom: 1px solid black;
+}
+.footer-top li{
+    flex-basis: 25%;
+}
+.tt img{
+    width: 150px;
+}
+
+/*----------- Logo cố định --------------*/
+.logo_call{
+    position: relative;
+    position: fixed;
+    bottom: 10px;left: 0;
+    left: 10px;
+    z-index: 3;
+}
+.logo_call li{
+    list-style: none;
+    background: rgb(16, 78, 150);
+    margin: 5px 0;
+    border-radius: 100px;
+}
+.button {  
+    border-radius: 10px;  
+    border: none; 
+    color: #FFFFFF; 
+    display: inline-block;
+    font-size: 25px; 
+    padding: 7px 15px;    
+    text-align: center;     
+    text-decoration: none;
+}
+
+
+/*----------- Reponsive --------------*/
+@media(max-width:1139px){
+    .header-content{
+        padding: 5px;
+    }
+    .menu a{
+        font-size: 13px;
+    }
+    .navigation-auto{
+        margin-top: 430px;
+    }
+}
+@media(max-width:780px){
+    .header-content{
+        padding: 0px 5px;
+    }
+    .logo img{
+        height: 40px;
+    }
+    .other li:first-child input{
+        font-size: 10px;
+    }
+    .other li:first-child i{
+        font-size: 13px;
+        padding-top: 5px;
+    }
+    .other li:nth-child(2) i{
+        font-size: 13px;
+    }
+    .other li:last-child i{
+        font-size: 13px;
+    }
+    .menu{
+        display: flex;
+        justify-content: space-around;
+        position: absolute;
+        margin-top: 63px;
+        left: 0;
+        background-color: rgb(252, 216, 98);
+        width: 100%;
+    }
+    .submenu{
+        width: 130px;
+    }
+    .menu li:last-child .submenu{
+        right: 0;
+    }
+    .menu a{
+        font-size: 10px;
+    }
+    .product-content{
+        display: inline-block;
+    }
+    .content-left{
+        width: 100%;
+    }
+    .content-right{
+        width: 100%;
+        padding-left: 5px;
+    }
+    .so-luong{
+        margin-bottom: 30px;
+    }
+    .product-buttom button{
+        width: 190px;
+        height: 40px;
+        font-size: 15px;
+    }
+    #wrapper .products li{
+        flex-basis: 50%;
+        padding-left: 10px;
+        padding-right: 10px;
+        box-sizing: border-box;
+        margin-bottom: 10px;
+    }
+    h3{
+        color: #111;
+        padding: 10px 20px;
+        display: inline-block;
+        font-weight: 600;
+    }  
+    .navigation-auto{
+        margin-top: 275px;
+    } 
+    .footer-top li{
+        flex-basis: 50%;
+    }
+}

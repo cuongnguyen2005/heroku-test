@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>DHC-Cửa hàng máy ảnh số 1 Việt Nam</title>
+        <link rel="stylesheet" href="css/style_3.css">
+        <link rel="icon" href="images/logobanner.png">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <!--------------- CƯỜNG-Header start ----------------->
+		<header>
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html"><img src="images/logobanner.png" height="70px" alt=""></a>
+                </div>
+                <div class="menu">
+                    <li><a href="index.html">Trang Chủ</a></li>
+                    <li><a href="san_pham.html">Máy Ảnh</a>
+                        <ul class="submenu">
+                            <li><a href="#">Máy ảnh Canon</a></li>
+                            <li><a href="#">Máy ảnh Nikon</a></li>
+                            <li><a href="#">Máy ảnh Sony</a></li>
+                            <li><a href="#">Máy ảnh Fujifilm</a></li>
+                            <li><a href="#">Máy ảnh Panasonic</a></li>
+                            <li><a href="#">Máy ảnh Olympus</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="san_pham.html">Máy Quay</a>
+                        <ul class="submenu">
+                            <li><a href="#">Máy quay Canon</a></li>
+                            <li><a href="#">Máy quay Nikon</a></li>
+                            <li><a href="#">Máy quay Sony</a></li>
+                            <li><a href="#">Máy quay Fujifilm</a></li>
+                            <li><a href="#">Máy quay GoPro</a></li>
+                            <li><a href="#">Máy quay JVC</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="san_pham.html">Ống Kính</a>
+                        <ul class="submenu">
+                            <li><a href="#">Ống kính Canon</a></li>
+                            <li><a href="#">Ống kính Nikon</a></li>
+                            <li><a href="#">Ống kính Sony</a></li>
+                            <li><a href="#">Ống kính Tamron</a></li>
+                            <li><a href="#">Ống kính Sigma</a></li>
+                            <li><a href="#">Ống kính Leica</a></li>
+                            <li><a href="#">Adapter-Ngàm chuyển</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="san_pham.html">Phụ Kiện</a>
+                        <ul class="submenu">
+                            <li><a href="#">PK máy ảnh-máy quay</a></li>
+                            <li><a href="#">Thiết bị Livestream</a></li>
+                            <li><a href="#">Thiết bị studio</a></li>
+                        </ul>
+                    </li>
+                </div>
+                <div class="other">
+                    <li><input type="text" placeholder="Bạn cần tìm gì?"><i class="fa fa-search"></i></li>
+                    <li><a href="giỏ_hàng.html"><i class="fa fa-shopping-cart"></i></a></li>
+                    <li><a href="login.html"><i class="fa fa-user-circle"></i></a></li>
+                </div>
+            </div>
+        </header>
+
+            <!--------------- Header-js ----------------->
+        <script>
+            const header = document.querySelector("header")
+            window.addEventListener("scroll",function(){
+                x=window.pageYOffset
+                if(x>0){
+                    header.classList.add("sticky")
+                }
+                else{
+                    header.classList.remove("sticky")
+                }
+            })
+        </script>
+        <!--------------- CƯỜNG-Header end ----------------->
+
+
+
+        <!--------------- Products start ----------------->
+        
+        <!------------Cường-chi tiết sản phẩm--------------->
+        <div class="wrapper">
+            <div class="product-home">
+                <div class="product-top-content">
+                    <i class="fa fa-home" id="home"></i><a href="index.html">Trang chủ</a>
+                    <i class="fa fa-chevron-right" id="chevron"></i><a href="#">Máy ảnh</a>
+                    <i class="fa fa-chevron-right" id="chevron"></i><a href="#">Máy ảnh Canon</a>
+                    <i class="fa fa-chevron-right" id="chevron"></i><a href="#">Canon 6D</a>
+                </div>
+            </div>
+            <div class="products">
+                <div class="product-content">
+                    <div class="content-left">
+                        <div class="product-big-img">
+                            <img src="images/5DS-04-2.png" alt="">
+                        </div>
+                        <div class="product-small-img">
+                            <li><img src="images/5DS-Body-1.png" alt=""></li>
+                            <li><img src="images/5DS-Body-2.png" alt=""></li>
+                            <li><img src="images/5DS-04-2.png" alt=""></li>
+                            <li><img src="images/5DS-Body-1.png" alt=""></li>
+                        </div>
+                    </div>
+                    <div class="content-right">
+                        <div class="product-name">
+                            <h1>Máy ảnh canon EOS 5D Body</h1>
+                        </div>
+                        <div class="product-price">
+                            <p>65.010.000đ</p>
+                        </div>
+                        <div class="so-luong">
+                            <p style="font-weight: bold;">Số lượng:</p>
+                            <input type="number" min="0" value="1">
+                        </div>
+                        <div class="other">
+                            <p>Còn hàng</p>
+                        </div>
+                        <div class="product-buttom">
+                            <button>Thêm vào giỏ</button>
+                            <button>Mua ngay</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="wrapper-content">
+                <div class="tabs">
+                    <ul class="nav-tab">
+                        <li class="active"><a href="#menu_1">Tính năng</a></li>
+                        <li><a href="#menu_2">Thông số kĩ thuật</a></li>
+                        <li><a href="#menu_3">Hỗ trợ</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div id="menu_1" class="tab-content-item">
+                            <p>Máy ảnh EOS 5DS mới tạo ra những bức ảnh tuyệt đẹp rõ nét và độ phân giải cao. Với độ phân giải đáng kinh ngạc 50.6 megapixel, chiếc máy ảnh pixel siêu cao này có tốc độ chụp liên tục tối đa lên tới khoảng 5 hình/giây. Với các tính năng khác như 61 điểm lấy nét tự động (AF) dạng lưới mật độ cao và hệ thống EOS iTR, EOS 5DS thực sự là chiếc máy ảnh pixel siêu cao vượt trội</p>
+                            <p> - Cảm biến CMOS fullframe 50,6-megapixel.</p>
+                            <p> - 2 chip DIGIC 6</p>
+                            <p> - Cảm biến đo sáng 150.000-pixel RGB + IR, 252 vùng<p>
+                            <p style="font-weight: bold;">Chất lượng hình ảnh đáng kinh ngạc, sắc nét đến từng chi tiết</p>
+                            <p>Với cảm biến CMOS fullframe 50,6-megapixel, EOS 5DS hiện nay là chiếc máy ảnh có độ phân giải cao nhất trong lịch sử dòng máy EOS của Canon. Để duy trì chất lượng hình ảnh tuyệt hảo, EOS 5DS có một bộ lọc low-pass quang học tiêu chuẩn để xử lý bất kỳ hiệu ứng gợn sóng không mong muốn nào. Khi bật chế độ crop 1.3x và 1.6x, người dùng vẫn có thể chụp được những bức ảnh đẹp tuyệt vời có độ phân giải cao 30.5 megapixel và 19.6 megapixel tương ứng.</p>
+                            <p style="font-weight: bold;">Hệ thống kiểm soát rung gương</p>
+                            <p>Thậm chí một vết mờ nhỏ nhất do rung máy cũng có thể hủy hoại một bức ảnh hoàn hảo. Sử dụng hệ thống cơ học đặc biệt để giảm ảnh mờ do máy ảnh rung, chiếc EOS 5DS mới sử dụng hệ thống kiểm soát rung Gương mới. Cơ chế này cho phép ngăn chặn các rung động xảy ra trong quá trình gương chuyển động. Điều này sẽ giải quyết toàn bộ vấn đề cho máy ảnh bằng cách giảm bớt hiện tượng ảnh mờ do máy ảnh rung đồng thời làm tiếng màn chập mở ra nhỏ đi.</p>
+                            <p style="font-weight: bold;">Thiết lập trước Fine Detail</p>
+                            <p>Fine Detail là thiết lập trước về Phong cách Ảnh mới được thiết kế nhằm tối đa hóa độ phân giải cho máy ảnh để chụp được cả những chi tiết nhỏ nhất, một điều rất quan trọng trong các ngành nghề như nhiếp ảnh kiến trúc, cảnh quan, thời trang và thương mại.</p>
+                        </div>
+                        <div id="menu_2" class="tab-content-item">
+                            <p style="font-size: 18px;font-weight: bold;">Loại máy ảnh</p>
+                            <table class="table table-bordered">
+                                <thead>
+                                  <tr>
+                                    <th scope="row">Loại máy ảnh</th>
+                                    <td>Dòng máy ảnh AF/AE số, phản xạ đơn ống kính</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">Phương tiện ghi hình</th>
+                                    <td>Thẻ CF (Loại I, hỗ trợ UDMA 7 ), Thẻ nhớ SD / SDHC / SDXC</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">Kích thước bộ cảm biến ảnh</th>
+                                    <td>Xấp xỉ 36,0 x 24,0mm</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">Loại ống kính</th>
+                                    <td>Các loại ống kính EF của Canon</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">Ngàm gắn ống kính</th>
+                                    <td>Ngàm gắn EF của Canon</td>
+                                  </tr>
+                                </thead>
+                            </table>
+                            <p style="font-size: 18px;font-weight: bold;">Bộ cảm biến</p>
+                            <table class="table table-bordered">
+                                <thead>
+                                  <tr>
+                                    <th scope="row">Loại cảm biến</th>
+                                    <td>Cảm biến CMOS</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">Effective pixels</th>
+                                    <td>Xấp xỉ 50,6 megapixels</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">Tỉ lệ khuôn hình</th>
+                                    <td>3:2</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">Tính năng xóa bụi bẩn trên dữ liệu</th>
+                                    <td>Tự động xóa/ Xóa bằng tay, Xóa bụi bẩn bám trên dữ liệu</td>
+                                  </tr>
+                                </thead>
+                            </table>
+                            <p style="font-size: 18px;font-weight: bold;">Hệ thống ghi hình</p>
+                            <table class="table table-bordered">
+                                <thead>
+                                  <tr>
+                                    <th scope="row">Định dạng ghi hình</th>
+                                    <td>Quy tắc thiết kế dành cho hệ thống file máy ảnh (DCF) 2.0</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">Loại ảnh</th>
+                                    <td>JPEG, RAW (nguyên bản 14-bit của Canon) Có thể ghi đồng thời ảnh định dạng RAW+JPEG</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">Crop/ Tỉ lệ khuôn hình</th>
+                                    <td>Chụp crop ảnh và chụp với tỉ lệ khuôn hình cài đặt Full-frame / Xấp xỉ 1,3x (crop) / Xấp xỉ 1,6x (crop) / 1:1 (tỉ lệ khuôn hình) / 4:3 (tỉ lệ khuôn hình) / 16:9 (tỉ lệ khuôn hình)</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">Chức năng ghi hình</th>
+                                    <td>Chuẩn, tự động chuyển thẻ, ghi riêng rẽ, ghi lên nhiều thẻ</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">Tạo/ Chọn thư mục:</th>
+                                    <td>Có sẵn</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">Đặt tên file</th>
+                                    <td>Mã cài đặt trước. Cài đặt người sử dụng 1/ Cài đặt người sử dụng 2</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">Đánh số file</th>
+                                    <td>Đánh số liên tiếp, tự động đánh số lại, đánh số lại bằng tay</td>
+                                  </tr>
+                                </thead>
+                            </table>
+                            <p style="font-size: 18px;font-weight: bold;">Màn trập</p>
+                            <table class="table table-bordered">
+                                <thead>
+                                  <tr>
+                                    <th scope="row">Loại</th>
+                                    <td>Màn trập tiêu cự phẳng điều khiển điện tử</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">Tốc độ màn trập</th>
+                                    <td>1/8000 giây đến 30 giây (tổng phạm vi tốc độ màn trập; phạm vi có sẵn khác nhau tùy theo từng chế độ chụp), đèn tròn, xung X ở 1/200 giây</td>
+                                  </tr>
+                                </thead>
+                            </table>
+                        </div>
+                        <div id="menu_3" class="tab-content-item">
+                            <p>Nội dung đang cập nhật</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!------------js product--------------->
+        <script>
+            const bigImg = document.querySelector(".product-big-img img")
+            const smallImg = document.querySelectorAll(".product-small-img img")
+            smallImg.forEach(function(imgItem,X){
+                imgItem.addEventListener("click",function(){
+                    bigImg.src = imgItem.src
+                })
+            })
+        </script>
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('.tab-content-item').hide();
+                $('.tab-content-item:first-child').fadeIn();
+                $('.nav-tab li').click(function(){
+                    $('.nav-tab li').removeClass('active');
+                    $(this).addClass('active');
+
+                    let id_tab_content = $(this).children('a').attr('href');
+                    $('.tab-content-item').hide();
+                    $(id_tab_content).fadeIn();
+                    return false;
+                });
+            });
+        </script>
+        <!------------Hiếu-sản phẩm liên quan--------------->
+        <div id="wrapper">
+            <div class="headline">
+                <p>Sản phẩm liên quan</p>
+            </div>
+            <ul class="products">
+                <li>
+                    <div class="product-items">
+                        <div class="product-top">
+                            <a href="chitietsanpham.html" class="product-thumb">
+                                <img src="images/c300miii-01.png" alt="">
+                            </a>
+                            <a href="chitietsanpham.html" class="buy-now">Mua ngay</a>
+                        </div>
+                        <div class="product-info">
+                            <a href="" class="product-name">Máy quya Canon EOS C300 Mark III Body</a>
+                            <div class="product-price">462.400.000đ</div>
+							<div class="star">
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+							</div>
+                        </div>
+                    </div>
+                </li>
+                
+                <li>
+                    <div class="product-items">
+                        <div class="product-top">
+                            <a href="chitietsanpham.html" class="product-thumb">
+                                <img src="images/10x16-KAS-S-03.png" alt="">
+                            </a>
+                            <a href="chitietsanpham.html" class="buy-now">Mua ngay</a>
+                        </div>
+                        <div class="product-info">
+                            <a href="" class="product-name">Ống kính Canon 10x16 KAS S</a>
+                            <div class="product-price">Liên hệ</div>
+							<div class="star">
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+							</div>
+                        </div>
+                    </div>
+                </li>
+
+				<li>
+                    <div class="product-items">
+                        <div class="product-top">
+                            <a href="chitietsanpham.html" class="product-thumb">
+                                <img src="images/C70JP-07.png" alt="">
+                            </a>
+                            <a href="chitietsanpham.html" class="buy-now">Mua ngay</a>
+                        </div>
+                        <div class="product-info">
+                            <a href="" class="product-name">Máy quay Canon EOS C70</a>
+                            <div class="product-price">146.00.000đ</div>
+							<div class="star">
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+							</div>
+                        </div>
+                    </div>
+                </li>
+
+				<li>
+                    <div class="product-items">
+                        <div class="product-top">
+                            <a href="chitietsanpham.html" class="product-thumb">
+                                <img src="images/RF1435-01.png" alt="">
+                            </a>
+                            <a href="chitietsanpham.html" class="buy-now">Mua ngay</a>
+                        </div>
+                        <div class="product-info">
+                            <a href="" class="product-name">Ống kính Canon RF14-35mm f/4L USM</a>
+                            <div class="product-price">55.000.000đ</div>
+							<div class="star">
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+							</div>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="product-items">
+                        <div class="product-top">
+                            <a href="chitietsanpham.html" class="product-thumb">
+                                <img src="images/M50-M50-MARK-IIjapan-01.png" alt="">
+                            </a>
+                            <a href="chitietsanpham.html" class="buy-now">Mua ngay</a>
+                        </div>
+                        <div class="product-info">
+                            <a href="" class="product-name">Máy ảnh Canon EOS M50 Mark II Body</a>
+                            <div class="product-price">19.010.000đ</div>
+							<div class="star">
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+							</div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!--------------- Products end ----------------->
+        
+
+
+        <!--------------- DƯƠNG-Footer start ----------------->
+        <div id="footer">
+            <ul class="footer-top">
+                <li>
+                    <div class="place">
+                        <a style="font-weight: bold;font-size: 15px;">Tìm cửa hàng</a>
+                        <br>
+                        <a href="">Mua hàng gần nhất</a>
+                        <br>
+                        <a href="">Mua hàng từ xa</a>
+                        <br>
+                        <a>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.017336361273!2d105.77172461517605!3d21.071969791677198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3134552defbed8e9%3A0x1584f79c805eb017!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBN4buPIC0gxJDhu4thIGNo4bqldA!5e0!3m2!1svi!2s!4v1632542079233!5m2!1svi!2s" width="150" height="100" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="tt">
+                        <a style="font-size: 15px;font-weight: bold;">Phương thức thanh toán</a>
+                        <br>
+                        <a href="">
+                            <img src="images/pttt.png" alt="">
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="introduce">
+                        <div style="font-size: 15px;font-weight: bold;">Cửa hàng</div>
+                        <a href="#">Giới thiệu</a>
+                        <br>
+                        <a href="#">Chính sách bảo hành</a>
+                        <br>
+                        <a href="#">Chính sách bảo mật</a>
+                        <br>
+                        <a href="#">Chi nhánh - Đại lý</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="call">
+                        <a href="#">Gọi mua hàng: 1800.2097 (8h00 - 22h00)</a>
+                        <br>
+                        <a href="#">Gọi khiếu nại: 1800.2063 (8h00 - 21h30)</a>
+                        <br>
+                        <a href="#">Gọi bảo hành: 1800.2064 (8h00 - 21h00)</a>
+                    </div>
+                </li>
+            </ul>
+            <div class="fuild-container" style="background: rgb(255, 223, 135);padding-top: 10px; padding-bottom: 5px;">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <p style="text-align: center;font-size: 12px; color: black;">
+                        2018 © Electronic Mart. All rights reserved. Developed by DHC company
+                        <br>
+                        GPDKKD số 0310697334, cấp ngày 17/03/2011 tại Sở kế hoạch và Đầu tư TP.Hà Nội
+                        <br>
+                        info@DHC.com
+                        <br>
+                        Số 18 Phố Viên, Đức Thắng, Bắc Từ Liêm
+                        <br>
+                        Hà Nội, Việt Nam, 100000
+                        <br>
+                        028.6297.0133 - 028.6297.0130
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!--------------- DƯƠNG-Footer end ----------------->
+
+        <!--------------- logo cố định ----------------->
+        <div class="logo_call">
+            <li><a href="https://facebook.com" class="button" target="_blank"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#" class="button"><i class="fa fa-phone"></i></a></li>
+        </div>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    </body>
+</html>

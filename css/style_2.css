@@ -1,0 +1,287 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, sans-serif;
+}
+li{
+    list-style: none;
+}
+/*----------- CƯỜNG-Header --------------*/
+header{
+    position: sticky;
+    top: 0;left: 0;right: 0;
+    z-index: 100;
+    background: rgba(255, 247, 236, 0.3);
+    transition: all 0.3s ease;
+}
+header:hover{
+    background: rgb(255, 223, 135);
+}
+header.sticky{
+    background: rgb(255, 223, 135);
+}
+.header-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+.menu{
+    display: flex;
+}
+.menu li{
+    padding: 0 12px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+.menu a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.menu a:hover{
+    color: rgb(0, 140, 255);
+    border-bottom: 2px solid rgb(255, 102, 0);
+    padding-bottom: 10px;
+}
+.submenu{
+    position: absolute;
+    background: rgb(255, 223, 135);
+    width: 200px;
+    padding: 10px ;
+    display: none;
+    top: 50px;
+    transition: all 0.5s ease;
+    margin-top: 8px;
+}
+.submenu li{
+    padding: 7px 0;
+}
+.menu li:hover .submenu{
+    display: block;
+    top: 30px;
+}
+.other{
+    display: flex;
+}
+.other li{
+    margin-left: 15px;
+}
+.other li:first-child{
+    position: relative;
+}
+.other li:first-child input{
+    width: 100%;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid black;
+    padding-left: 3px;
+    background: transparent;
+}
+.other li:first-child i{
+    position: absolute;
+    right: 2px;
+}
+.other li:nth-child(2) i{
+    font-size: 20px;
+    color: black;
+    border-left: 2px solid gray;
+    padding-left: 15px;
+}
+.other li:nth-child(2) i:hover{
+    color: red;
+}
+.other li:last-child i{
+    font-size: 20px;
+    color: black;
+    border-left: 2px solid gray;
+    padding-left: 15px;
+}
+.other li:last-child i:hover{
+    color: blue;
+}
+/*----------- Card --------------*/
+#card{
+    max-width: 750px;
+    margin: 0 auto;
+}
+.card-top {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+.card-top li{
+    text-align: center;
+}
+.card-top li:first-child a{
+    font-size: 15px;
+    text-decoration: none;
+    color: red;
+}
+.card-top li:last-child{
+    font-size: 20px;
+}
+.card-down{
+    text-align: center;
+    font-size: 23px;
+    padding-top: 100px;
+    padding-bottom: 130px;
+}
+.card-down p{
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+.home{
+    border: 1px solid gainsboro;
+    display: inline-block;
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+.card-down a{
+    font-size: 15px;
+    text-decoration: none;
+    padding: 40px 20px;
+    color: black;
+}
+.home:hover{
+    background: gainsboro;
+}
+/*----------- Dương-Footer --------------*/
+.banner-footer{
+    max-width: 100%;
+    margin: 0;
+    padding-left: 0;
+}
+.banner-footer img{
+    width: 100%;
+}
+#footer a{
+    font-size: 12px;
+    text-decoration: none;
+    color: black;
+}
+#footer{
+    background: rgb(255, 223, 135);
+}
+.footer-top{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1170px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    padding: 0;
+    padding-top: 15px;
+    border-bottom: 1px solid black;
+}
+.footer-top li{
+    flex-basis: 25%;
+}
+.tt img{
+    width: 150px;
+}
+
+/*----------- Logo cố định --------------*/
+.logo_call{
+    position: relative;
+    position: fixed;
+    bottom: 10px;left: 0;
+    left: 10px;
+    z-index: 3;
+}
+.logo_call li{
+    list-style: none;
+    background: rgb(16, 78, 150);
+    margin: 5px 0;
+    border-radius: 100px;
+}
+.button {  
+    border-radius: 10px;  
+    border: none; 
+    color: #FFFFFF; 
+    display: inline-block;
+    font-size: 25px; 
+    padding: 7px 15px;    
+    text-align: center;     
+    text-decoration: none;
+}
+
+
+/*----------- Reponsive --------------*/
+@media(max-width:1139px){
+    .header-content{
+        padding: 5px;
+    }
+    .menu a{
+        font-size: 13px;
+    }
+    .navigation-auto{
+        margin-top: 430px;
+    }
+}
+@media(max-width:780px){
+    .header-content{
+        padding: 0px 5px;
+    }
+    .logo img{
+        height: 40px;
+    }
+    .other li:first-child input{
+        font-size: 10px;
+    }
+    .other li:first-child i{
+        font-size: 13px;
+        padding-top: 5px;
+    }
+    .other li:nth-child(2) i{
+        font-size: 13px;
+    }
+    .other li:last-child i{
+        font-size: 13px;
+    }
+    .menu{
+        display: flex;
+        justify-content: space-around;
+        position: absolute;
+        margin-top: 63px;
+        left: 0;
+        background-color: rgb(252, 216, 98);
+        width: 100%;
+    }
+    .submenu{
+        width: 130px;
+    }
+    .menu li:last-child .submenu{
+        right: 0;
+    }
+    .menu a{
+        font-size: 10px;
+    }
+    .products li{
+        flex-basis: 50%;
+        padding-left: 10px;
+        padding-right: 10px;
+        box-sizing: border-box;
+        margin-bottom: 10px;
+    }
+    .card-top{
+        padding-top: 30px;
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+    .card-top li:first-child a{
+        font-size: 10px;
+        text-decoration: none;
+        color: red;
+    }
+    .card-top li:last-child{
+        font-size: 15px;
+    }  
+    .navigation-auto{
+        margin-top: 275px;
+    }
+    .footer-top li{
+        flex-basis: 50%;
+    }
+}
